@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body{   
+    background-color: rgba(72, 163, 0, 0.07);
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-block: 2rem;
+}
+h1 span{
+    color: rgba(72, 163, 0, 1);
+    font-size: 4rem;
+}
+.card{
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    max-width: 60vw;
+    background-color: rgba(251, 251, 251, 1);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-heading{
+    display: flex;
+    gap:1rem;
+}
+.card-heading h2{
+    font-size: 2rem;
+}
+.img-container{
+    width: 3rem;
+}
+.card-heading img{
+    width: 100%;
+}
+.card p{
+    color: rgba(133, 133, 133, 1);
+}
+.card > *+*{
+    margin-top: 2rem;
+}
+.bar{
+    height: 2rem;
+    background-color: rgba(72, 163, 0, 0.1);
+    border-radius:1rem ;
+}
+.progress{
+    width: 33%;
+    height: 100%;
+    background-color:rgba(72, 163, 0, 1);
+    border-radius:1rem ;
+}
+.card .error{
+    font-size: 1rem;
+    color: rgba(255, 81, 81, 1);
+}
+.button-container{
+    color:rgba(217, 217, 217, 1);
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+.button-container label{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1.25rem ;
+}
+.button-container label input{
+    scale: 1.8;
+    margin-right:1.5rem ;
+    opacity: 0.4;
+}
+.button-container+p{
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    padding-block: 3rem;
+    font-weight: 500;
+}
+
+.desc{
+    font-size: 0.7rem;
+    color: rgba(133, 133, 133, 1);
+    text-align: center;
+    margin-block: 3rem;
+}
+
+@media (max-width: 1040px) {
+    *{
+        font-size: 14px;
+    }
+    .card{
+        max-width: 70vw;
+    }
+}
+@media (max-width: 920px) {
+    *{
+        font-size: 12px;
+    }
+}
+@media (max-width: 720px) {
+    .card{
+        max-width: 80vw;
+    }
+}
+@media (max-width: 520px) {
+    *{
+        font-size: 8px;
+    }
+    .card{
+        max-width: 90vw;
+    }
+}
