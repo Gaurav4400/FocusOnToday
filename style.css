@@ -21,7 +21,7 @@ h1 span{
 .card{
     margin-inline: auto;
     margin-bottom: 2rem;
-    max-width: 60vw;
+    max-width: 55rem;
     background-color: rgba(251, 251, 251, 1);
     border-radius: 1rem;
     padding: 1rem 1.5rem;
@@ -68,15 +68,37 @@ h1 span{
     flex-direction: column;
     gap:3rem;
 }
-.button-container label{
+.btn{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
-    padding: 1.25rem ;
+    display: flex;
+    align-items: center;
+    padding-inline: 1.5rem;
+    background-color: #FFFFFF;
 }
-.button-container label input{
-    scale: 1.8;
-    margin-right:1.5rem ;
-    opacity: 0.4;
+.check-box{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid rgba(97, 72, 28, 1);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    inset: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.check-box img{
+    /* display: none; */
+    width: 100%;
+}
+.btn input{
+    border: none;
+    outline: none;
+    padding: 1.25rem ;
+    flex-grow: 1;
+}
+.btn input::placeholder{
+    color: rgba(217, 217, 217, 1);
 }
 .button-container+p{
     color: rgba(0, 0, 0, 1);
@@ -96,9 +118,6 @@ h1 span{
     *{
         font-size: 14px;
     }
-    .card{
-        max-width: 70vw;
-    }
 }
 @media (max-width: 920px) {
     *{
@@ -106,15 +125,12 @@ h1 span{
     }
 }
 @media (max-width: 720px) {
-    .card{
-        max-width: 80vw;
-    }
+     .card{
+        margin-inline:2rem;
+     }
 }
 @media (max-width: 520px) {
     *{
-        font-size: 8px;
-    }
-    .card{
-        max-width: 90vw;
+        font-size: 10px;
     }
 }
